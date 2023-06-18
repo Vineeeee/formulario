@@ -1,0 +1,154 @@
+html{
+    font-family: Roboto, sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background: url(./images/bg-repeat.jpg) repeat-x center center;
+    background-size: contain;
+    /* max-width: 1700px; */
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.duvidas{
+    color: #FFF;
+    width: 80%;
+    position: absolute;
+}
+
+.duvidas h1{
+    font-size: 26px;
+    line-height: 33.44px;
+    font-weight: 900;
+}
+
+.duvidas p{
+    width: 35%;
+    font-weight: 400;
+    padding-top: 11px;
+    font-size: 20px;
+}
+
+.formulario{
+    width: 450px;
+    background-color: #FFF;
+    margin-left: 850px;
+    display: flex;
+    height: 588px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formulario input{
+    width: 400px;
+    height: 45px;
+    margin: 9px 0;
+    border-radius: 7px;
+    padding: 15px
+} 
+
+.input{
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.formulario input:first-child{
+    margin-top: 20px;
+}
+
+.formulario input:nth-child(7){
+    height: 250px;
+    padding-bottom: 250px;
+}
+
+.formulario p{
+    align-self: flex-start;
+    font-size: 15px;
+    margin-top: 2px;
+    margin-left: 20px;
+}
+
+.formulario button{
+    width: 400px;
+    margin-top: 10px;
+    margin-bottom: 2px;
+    height: 50px;
+    background-color: var(--botao);
+    color: #FFF;
+    font-size: 18px;
+    font-family: Roboto;
+    border-radius: 5px;
+    border: #FFF;
+    font-weight: 700;
+}
+
+.formulario button:hover{
+    cursor: pointer;
+}
+
+.campo-obrigatorio{
+    color: red;
+    font-size: 12px;
+    align-self: flex-start;
+    margin-left: 25px;
+    line-height: 0;
+}
+
+.none{
+    display: none;
+}
+
+.bordaVermelha{
+    border: solid 1px red;
+}
+
+@media (max-width: 414px) {
+    .container{
+        flex-direction: column-reverse;
+    }
+
+    .duvidas{
+        padding-top: 20px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formulario{
+        margin: 10px 0;
+        width: 340px;
+        margin-left:0 ;
+    }
+
+    .formulario input{
+        width: 300px;
+    }
+
+    .formulario button{
+        width: 200px;
+    }
+    
+    .duvidas h1{
+        font-size: 26px;
+        line-height: 33.44px;
+        font-weight: 900;
+    }
+    
+    .duvidas p{
+        font-weight: 400;
+        padding-top: 11px;
+        font-size: 20px;
+        min-width: 300px;
+        margin-left: 40px;
+    }
+
+    h1:nth-child(2){
+        margin-left: 40px;
+    }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./variables.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comme:wght@300;400;700&family=Flow+Circular&family=Inter&family=Manrope:wght@800&family=Oswald:wght@200;300;400;500;600;700&family=Playfair:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;700;900&family=Rubik:wght@300;400;500;600;700;800;900&family=Tilt+Warp&display=swap"
+        rel="stylesheet">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <div class="container">
+        <article class="duvidas">
+            <h1>FICOU COM DÚVIDA?</h1>
+            <h1>NOS MANDE UMA MENSAGEM!</h1>
+            <p>caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de
+                24h.</p>
+        </article>
+        <article class="formulario">
+            <input class="input" type="text" autofocus placeholder="Nome completo *">
+            <div class="campo-obrigatorio none">campo obrigatorio</div>
+            <input class="input" type="email" placeholder="E-mail *">
+            <div class="campo-obrigatorio none">campo obrigatorio</div>
+            <input class="input" type="tel" placeholder="Telefone *" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" >
+            <div class="campo-obrigatorio none">campo obrigatorio</div>
+            <input class="input" type="text" placeholder="Mensagem *">
+            <div class="campo-obrigatorio none">campo-obrigatorio</div>
+            <p>*campos obrigatórios</p>
+            <button>Enviar</button>
+        </article>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
